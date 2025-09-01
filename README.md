@@ -1,2 +1,50 @@
-# webscraper-
-Collection of Python web scraping scripts for extracting data from e-commerce sites, test websites, and other domains using Selenium and requests.
+# Web Scraper - Laptops
+
+This Python project uses **Selenium** to scrape laptop details from a test e-commerce website.  
+It collects the following data for each product:
+
+Title  
+Price  
+Ratings  
+Number of Reviews  
+Product URL  
+Description  
+
+The data is saved in a JSON file (`output.json`) for further use.
+
+## Features
+
+- Headless browser support (runs without opening Chrome GUI)  
+- Handless dynamic elements  
+- Includes retry logic for product descriptions  
+- Saves scraped data in structured JSON  
+
+
+## Requirements
+
+- Python 3.10+  
+- Google Chrome installed  
+- ChromeDriver (placed in the project folder)  
+
+## Setup
+
+1. Clone or download the repository:
+```bash
+git clone https://github.com/yedukondaluchintala99-rgb/webscraper-.git
+cd webscraper-
+
+Create a virtual environment:
+python -m venv env
+# Activate it
+# Windows
+env\Scripts\activate
+# Linux/Mac
+source env/bin/activate
+
+Install dependencies:
+pip install -r requirements.txt
+
+How to Run
+python main.py
+
+After the execution of the script, output will be saved in output.json. Please validate it.
