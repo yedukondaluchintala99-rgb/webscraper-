@@ -29,9 +29,31 @@ The data is saved in a JSON file (`output.json`) for further use.
 ## Setup
 
 1. Clone or download the repository:
-```bash
+**Cloning
 git clone https://github.com/yedukondaluchintala99-rgb/webscraper-.git
 cd webscraper-
+
+Alternative if you don’t want to install Git
+You can download the repository as a ZIP:
+Go to your GitHub repo page.
+Click Code → Download ZIP.
+Extract it to a folder and use it locally.
+
+Create a virtual environment:
+python -m venv env
+# Activate it
+# Windows
+env\Scripts\activate
+# Linux/Mac
+source env/bin/activate
+
+Install dependencies:
+pip install -r requirements.txt
+
+How to Run
+python main.py
+
+After the execution of the script, output will be saved in output.json. Please validate it.
 
 Create a virtual environment:
 python -m venv env
