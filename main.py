@@ -96,10 +96,11 @@ def main(url, retries=3):
     driver.quit()
 
     #Writing data in json format
-    with open("output12.json", "w", encoding="utf-8") as f:
+    with open("output.json", "w", encoding="utf-8") as f:
         json.dump(products_list, f, ensure_ascii=False, indent=4)
 
 # This ensures main() runs only when the script is executed directly
 if __name__ == "__main__":
     url = 'https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops'
+
     main(url)
