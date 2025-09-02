@@ -41,10 +41,10 @@ Extract it to a folder and use it locally.
 
 **Create a virtual environment:**
   python -m venv env
-Activate it
-Windows
+**Activate it**
+**Windows**
   env\Scripts\activate
-Linux
+**Linux**
   source env/bin/activate
 
 **Install dependencies:**
