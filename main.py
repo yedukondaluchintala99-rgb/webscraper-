@@ -57,7 +57,7 @@ def main(url, retries=3):
                 reviews_count = rat_rev.find_element('xpath', './/span').text.strip()
                 if reviews_count:
                     rating_review_json.update({'reviews_count':reviews_count})
-            product_url = product.find_element('xpath', './/h4/a[@class="title"]').get_attribute('href')
+            product_url = find_attr(product, './/h4/a[@class="title"]', 'href')
             description = ""
             if product_url:
                 for attempt in range(retries):
@@ -104,3 +104,4 @@ if __name__ == "__main__":
     url = 'https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops'
 
     main(url)
+
