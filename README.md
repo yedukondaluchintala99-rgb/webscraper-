@@ -39,13 +39,13 @@ Go to your GitHub repo page.
 Click Code → Download ZIP.
 Extract it to a folder and use it locally.
 
-Create a virtual environment:
-python -m venv env
+**Create a virtual environment:**
+  python -m venv env
 Activate it
 Windows
-env\Scripts\activate
+  env\Scripts\activate
 Linux
-source env/bin/activate
+  source env/bin/activate
 
 **Install dependencies:**
 pip install -r requirements.txt
